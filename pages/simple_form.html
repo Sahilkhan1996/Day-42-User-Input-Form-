@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic Input Types</title>
+    <link rel="stylesheet" href="../css/simple_form.css">
+</head>
+
+<body>
+    <form>
+
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input Fields</h1>
+        </header>
+
+        <div>
+            <label for="text">Enter Name: </label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+
+        <div>
+            <label for="pwd">Enter Password: </label>
+            <input type="password" id="pwd" name="pwd" required>
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+
+        <div>
+            <label for="email">Enter Email: </label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+
+        <div>
+            <label for="url">Enter URL: </label>
+            <input type="url" id="url" name="url">
+        </div>
+
+        <div>
+            <label for="number">Enter Number:</label>
+            <input type="number" id="number" name="number">
+        </div>
+
+        <div>
+            <label for="tel">Enter Telephone Number: </label>
+            <input type="tel" id="tel" name="tel">
+            <error-output class="tel-error" for="tel"></error-output>
+        </div>
+
+        <div>
+            <label for="search">Search URL: </label>
+            <input type="search" id="search" name="search">
+        </div>
+
+        <div class="nativeDateTimePicker">
+            <label for="party">Date and Time: </label>
+            <input type="datetime-local" id="party" name="bday">
+            <span class="validity"></span>
+        </div>
+
+        <div>
+            <label for="salary">Enter Salary: </label>
+            <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+
+        <script src="../js/simple_form.js"></script>
+
+    </form>
+</body>
+
+</html>
